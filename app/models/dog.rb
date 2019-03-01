@@ -9,7 +9,7 @@ class Dog
       d.name = name
       d.breed = breed
       d.age = age
-      u.save
+      d.save!
     end
     
   end
