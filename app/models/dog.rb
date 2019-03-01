@@ -4,14 +4,13 @@ class Dog
   @@all = []
 
   def initialize(name, breed, age)
-
-    dog = Dog.new.tap do |d|
-      d.name = name
-      d.breed = breed
-      d.age = age
-      d.save!
-    end
+    dog = dog.new 
+    dog.name = name
     
+  end
+
+  def self.all
+    @@all
   end
   
 end
